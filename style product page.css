@@ -12,10 +12,6 @@ body,html{margin:0;padding:0;}
     animation: scrollText 15s linear infinite; 
 }
 
-.btn-group{
-    align-items: center;
-}
-
 @keyframes scrollText {
     0% {
         transform: translateX(100%);
@@ -32,7 +28,7 @@ body,html{margin:0;padding:0;}
     margin-top: 1em;
 }
 .card{
-    max-width: 250px;
+
     margin-bottom: 2em;
 }
 .banner_container img{
@@ -40,7 +36,7 @@ body,html{margin:0;padding:0;}
     
 }
 .btn-custom{
-    width: 70%;
+    max-width: 8em;
 }
 .custom-search{
     max-width: 100px;
@@ -57,20 +53,10 @@ body,html{margin:0;padding:0;}
     opacity: 1;
 }
 @media (width >=1020px){
-    .banner_containerpc{
-        background-image: url(img/upbanner.JPEG);
-        height: 100vh;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-    .banner_container{
-        display: none;
-    }
+    
 }
 #buybutton img{
-   width:20% ;
+   max-width: 20% ;
 }
 #buybutton{
     width: 70%;
@@ -86,13 +72,24 @@ body,html{margin:0;padding:0;}
     .custom-search{
         max-width: 220px;
     }
+    ul:nth-child(3){
+        margin-right: 200px;
+        background-color: blue;
+    }
+  
+    
 }
+
+.login-tab{
+    display: flex;
+}
+
 div h1{
     font-size: 1.25em;
 }
 
 
-li #signin,#sign{
+li #signin{
     
     outline:  auto #ac383e;
     color: #ac383e;
@@ -118,3 +115,12 @@ li{
     max-width: 1200px;
     margin: auto;
 }
+.btn-group{
+    align-items: center;
+}
+div .size{
+    color: #802227;
+    border: 1px solid #802227;
+  
+}
+

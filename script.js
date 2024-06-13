@@ -68,12 +68,4 @@
         });
       });
       
-    // Espera o documento ser carregado
-    $(document).ready(function(){
-        // Adiciona um listener para o click no botão
-        $('#btnToast').click(function(){
-            // Exibe o Toast
-            $('.toast').toast('show');
-        });
-    });
-
+    
