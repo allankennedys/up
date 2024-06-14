@@ -118,3 +118,11 @@ li{
     max-width: 1200px;
     margin: auto;
 }
+.clothelink{
+text-decoration: none;
+color: black;
+}
+footer{
+    background: #802227;
+    height: 200px;
+}

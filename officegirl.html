@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="filter">
+        <h3>Filtrar por Preço</h3>
+        <select id="priceFilter">
+          <option value="all">Todos</option>
+          <option value="low">Até R$ 150,00</option>
+          <option value="medium">R$ 150,01 - R$ 300,00</option>
+          <option value="high">Acima de R$ 300,00</option>
+        </select>
+        
+        <h3>Ordenar por Preço</h3>
+        <select id="sortOrder">
+          <option value="asc">Menor para Maior</option>
+          <option value="desc">Maior para Menor</option>
+        </select>
+      </div>
+      <section class="clothes_container" id="clothesContainer">
+        <div class="card" data-price="300">
+          <img src="img/cyberpcoverzoom.jpg" class="card-img-top" alt="Conjunto CyberPunk">
+          <div class="card-body">
+            <h5 class="card-title">Conjunto CyberPunk</h5>
+            <p class="card-text">R$ 300,00</p>
+            <div class="d-flex">
+              <a href="#" class="btn btn-dark btn-custom " id="buybutton"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUhJREFUSEu9lS1PxFAQRc8lwWBJCBZNQpCrcAgMCrEGTQCBI/wFPJA1GAxBoDAIDIogCRgsigSDQZFw6dt0N91uv0t55omZN2dm7kwrOj7qOD7/B7DtuJov4FzSwV9UN64gARjFXZd01xYy1SLbh8AxcCNpswvAPPAOzABLkt7aQDJFtn0BbLcI/CRpNbzPA/SAhxaAZ0kruYBgsP0CLGdBJA0TyxiMkfuRpKBj/h7Y3gEGDQA/0btFSR9lgDkgOIV7eEaZp6GpSm4lbYzfFPXZ9kkE2a8J6Eu6qgoIGgQtJk6BBp/AgqTvSoBYyHtgLUkoAAwk7U74lo2i7T5wWeYX23tR/x/rAmaB17DVJZBrSVtT7ayYWWO3Sv8D26fAXiTgWTTf46mKNcq1Fe5BMuXknKd3ochWB9BtBY0FKPoWtQlaa0zbgn4BJ3V9GSK63UUAAAAASUVORK5CYII="/></a>
+              <button class="btn btn-sm like-button" id="like"><img src="img/heart.png"/></button>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="150">
+          <img src="img/messygzoom.jpg" class="card-img-top" alt="Conjunto Messy Girl">
+          <div class="card-body">
+            <h5 class="card-title">Conjunto Messy Girl</h5>
+            <p class="card-text">R$ 150,00</p>
+            <div class="d-flex">
+              <a href="#" class="btn btn-dark btn-custom " id="buybutton"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUhJREFUSEu9lS1PxFAQRc8lwWBJCBZNQpCrcAgMCrEGTQCBI/wFPJA1GAxBoDAIDIogCRgsigSDQZFw6dt0N91uv0t55omZN2dm7kwrOj7qOD7/B7DtuJov4FzSwV9UN64gARjFXZd01xYy1SLbh8AxcCNpswvAPPAOzABLkt7aQDJFtn0BbLcI/CRpNbzPA/SAhxaAZ0kruYBgsP0CLGdBJA0TyxiMkfuRpKBj/h7Y3gEGDQA/0btFSR9lgDkgOIV7eEaZp6GpSm4lbYzfFPXZ9kkE2a8J6Eu6qgoIGgQtJk6BBp/AgqTvSoBYyHtgLUkoAAwk7U74lo2i7T5wWeYX23tR/x/rAmaB17DVJZBrSVtT7ayYWWO3Sv8D26fAXiTgWTTf46mKNcq1Fe5BMuXknKd3ochWB9BtBY0FKPoWtQlaa0zbgn4BJ3V9GSK63UUAAAAASUVORK5CYII="/></a>
+              <button class="btn btn-sm" id="like"><img src="img/heart.png"/></button>
+            </div>
+          </div>
+        </div>
+        <div class="card" data-price="200">
+          <img src="img/officegzoom.jpg" class="card-img-top" alt="Conjunto Office Girl">
+          <div class="card-body">
+            <h5 class="card-title">Conjunto Office Girl</h5>
+            <p class="card-text">R$ 200,00</p>
+            <div class="d-flex">
+              <a href="#" class="btn btn-dark btn-custom " id="buybutton"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAUhJREFUSEu9lS1PxFAQRc8lwWBJCBZNQpCrcAgMCrEGTQCBI/wFPJA1GAxBoDAIDIogCRgsigSDQZFw6dt0N91uv0t55omZN2dm7kwrOj7qOD7/B7DtuJov4FzSwV9UN64gARjFXZd01xYy1SLbh8AxcCNpswvAPPAOzABLkt7aQDJFtn0BbLcI/CRpNbzPA/SAhxaAZ0kruYBgsP0CLGdBJA0TyxiMkfuRpKBj/h7Y3gEGDQA/0btFSR9lgDkgOIV7eEaZp6GpSm4lbYzfFPXZ9kkE2a8J6Eu6qgoIGgQtJk6BBp/AgqTvSoBYyHtgLUkoAAwk7U74lo2i7T5wWeYX23tR/x/rAmaB17DVJZBrSVtT7ayYWWO3Sv8D26fAXiTgWTTf46mKNcq1Fe5BMuXknKd3ochWB9BtBY0FKPoWtQlaa0zbgn4BJ3V9GSK63UUAAAAASUVORK5CYII="/></a>
+              <button class="btn btn-sm" id="like"><img src="img/heart.png"/></button>
+            </div>
+          </div>
+        </div>
+      </section>
+</body>
+</html>
