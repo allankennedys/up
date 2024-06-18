@@ -43,30 +43,49 @@
     });
     
     document.addEventListener("DOMContentLoaded", function () {
-        // alterna a imagem do botão de like
-        function toggleLikeImage(event) {
+      const likeButtons = document.querySelectorAll('#like');
+  
+      likeButtons.forEach(button => {
+          button.addEventListener('click', toggleLikeImage);
+      });
+  
+      function toggleLikeImage(event) {
           event.preventDefault();
           const button = event.currentTarget;
           const img = button.querySelector('img');
-          
-          // armazena cada imagem a uma constante para que possamos manipular as interações, dessa vez para o botão de like
+          const card = button.closest('.card');
+          const itemName = card.querySelector('.card-title').textContent.trim();
+  
           const originalHeart = 'img/heart.png';
           const newHeart = 'img/heartfilled.png';
-      
-          // alterna a imagem de acordo com a interação
+  
           if (img.src.includes(originalHeart)) {
-            img.src = newHeart;
+              img.src = newHeart;
+              addToFavorites(itemName);
           } else {
-            img.src = originalHeart;
+              img.src = originalHeart;
+              removeFromFavorites(itemName);
           }
-        }
-      
-        
-        const likeButtons = document.querySelectorAll('#like');
-        likeButtons.forEach(button => {
-          button.addEventListener('click', toggleLikeImage);
-        });
-      });
+      }
+  
+      function addToFavorites(itemName) {
+          const offcanvasList = document.querySelector('#favorite-items-list');
+          const listItem = document.createElement('li');
+          listItem.textContent = itemName;
+          offcanvasList.appendChild(listItem);
+      }
+  
+      function removeFromFavorites(itemName) {
+          const offcanvasList = document.querySelector('#favorite-items-list');
+          const items = offcanvasList.querySelectorAll('li');
+          items.forEach(item => {
+              if (item.textContent === itemName) {
+                  offcanvasList.removeChild(item);
+              }
+          });
+      }
+  });
+  
       const ratings = document.getElementById('rating1'); const rating1 = new CDB.Rating(ratings);
       rating1.getRating;
 
