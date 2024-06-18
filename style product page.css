@@ -62,10 +62,10 @@ body,html{margin:0;padding:0;}
     width: 70%;
     display: flex;
     justify-content: center;
-    background-color: #802227;
+    background-color: black;
 }
 #buybutton:hover{
-    background-color:#ac383e ;
+    background-color:rgb(32, 32, 32) ;
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -91,17 +91,17 @@ div h1{
 
 li #signin,#sign{
     
-    outline:  auto #ac383e;
-    color: #ac383e;
+    outline:  auto black;
+    color: black;
     margin-right: 0.5em;
 
 }
 li #signup{
-    background-color: #ac383e;
+    background-color: black;
     color: white;
 }
 #signin:hover,#signup:hover{
-    background-color: #802227;
+    background-color: black;
     color: white;
 }
 
@@ -109,7 +109,7 @@ li{
     display: flex;
 }
 .nav-link:hover{
-    color: #ac383e;
+    color: black;
 }
 .tab{
     max-width: 1200px;
@@ -120,18 +120,18 @@ li{
     margin-top: 1em;
 }
 .btn-check:hover{
-    background-color: #802227;
+    background-color: black;
 }
 div .size{
-    color: #802227;
-    border: 1px solid #802227;
+    color: black;
+    border: 1px solid black;
     margin: auto;
   
 }
 .btn-check:checked + .size, 
     .btn-check:hover + .size, 
     .size:hover {
-      background-color: #802227;
+      background-color: black;
       color: white; 
     }
 .carousel-item  {
@@ -139,3 +139,96 @@ div .size{
     height: 400px;
     object-fit: cover; 
 }
+@media (width >=1020px){
+    .searchcustom input{
+        max-width: 500px;
+    }
+    .rating-bar0{
+        margin-left: 0;
+        margin-right: 55%;}
+}
+
+.rating-on-img {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+  }
+  
+  .head-rate {
+      font-size: 70px;
+      margin-bottom: 0px;
+      cursor: pointer;
+  }
+  
+  .subhead-rate {
+      font-size: 20px;
+      font-weight: normal;
+      cursor: pointer;
+  }
+  
+  .heading0 {
+      margin-top: -50px;
+  }
+  
+  .rating-label {
+      font-weight: 500;
+  }
+  
+  /* Rating bar width */
+  .rating-bar {
+      width: 200px;
+      padding: 8px;
+      border-radius: 5px;
+      
+    }
+  
+  /* The bar container */
+  .bar-container {
+    width: 100%;
+    background-color: #f1f1f1;
+    text-align: center;
+    color: rgb(46, 37, 37);
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  /* Individual bars */
+  .bar-5 {
+      width: 70%;
+      height: 10px;
+      background-color: #FBC02D; 
+      border-radius: 20px;
+  
+  }
+  .bar-4 {
+      width: 30%;
+      height: 10px;
+      background-color: #FBC02D; 
+      border-radius: 20px;
+  
+  }
+  .bar-3 {
+      width: 20%;
+      height: 10px;
+      background-color: #FBC02D; 
+      border-radius: 20px;
+  
+  }
+  .bar-2 {
+      width: 10%;
+      height: 10px;
+      background-color: #FBC02D; 
+      border-radius: 20px; 
+  
+  }
+  .bar-1 {
+      width: 0%;
+      height: 10px;
+      background-color: #FBC02D; 
+      border-radius: 20px;
+  
+  }
+  

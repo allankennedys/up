@@ -9,7 +9,7 @@ body,html{margin:0;padding:0;}
 }
 
 .text_bar p {
-    animation: scrollText 15s linear infinite; 
+    animation: scrollText 20s linear infinite; 
 }
 
 .btn-group{
@@ -68,6 +68,9 @@ body,html{margin:0;padding:0;}
     .banner_container{
         display: none;
     }
+    .searchcustom input{
+        max-width: 500px;
+    }
 }
 #buybutton img{
    width:20% ;
@@ -76,10 +79,10 @@ body,html{margin:0;padding:0;}
     width: 70%;
     display: flex;
     justify-content: center;
-    background-color: #802227;
+    background-color: black;
 }
 #buybutton:hover{
-    background-color:#ac383e ;
+    background-color:rgb(20, 20, 20) ;
 }
 
 @media (min-width: 600px) and (max-width: 900px) {
@@ -94,17 +97,17 @@ div h1{
 
 li #signin,#sign{
     
-    outline:  auto #ac383e;
-    color: #ac383e;
+    outline:  auto black;
+    color: black;
     margin-right: 0.5em;
 
 }
 li #signup{
-    background-color: #ac383e;
+    background-color: black;
     color: white;
 }
 #signin:hover,#signup:hover{
-    background-color: #802227;
+    background-color: black;
     color: white;
 }
 
@@ -112,7 +115,7 @@ li{
     display: flex;
 }
 .nav-link:hover{
-    color: #ac383e;
+    color: black;
 }
 .tab{
     max-width: 1200px;
@@ -122,7 +125,16 @@ li{
 text-decoration: none;
 color: black;
 }
-footer{
-    background: #802227;
-    height: 200px;
+.contact {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+}
+.submit{
+    background: black;
+    color: white;
+    border-radius: 6px;
+    width: 6em;
 }

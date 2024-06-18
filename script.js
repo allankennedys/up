@@ -51,7 +51,7 @@
           
           // armazena cada imagem a uma constante para que possamos manipular as interações, dessa vez para o botão de like
           const originalHeart = 'img/heart.png';
-          const newHeart = 'img/heartfilledred.png';
+          const newHeart = 'img/heartfilled.png';
       
           // alterna a imagem de acordo com a interação
           if (img.src.includes(originalHeart)) {
@@ -67,5 +67,31 @@
           button.addEventListener('click', toggleLikeImage);
         });
       });
-      
+      const ratings = document.getElementById('rating1'); const rating1 = new CDB.Rating(ratings);
+      rating1.getRating;
+
+      function submitContact() {
+        const nome = document.getElementById('nome');
+        const telefone = document.getElementById('telefone');
+        const email = document.getElementById('email');
+        const mensagem = document.getElementById('mensagem');
+        const confirmationMessage = document.getElementById('confirmationMessage');
+        const errorMessage = document.getElementById('errorMessage');
+
+        confirmationMessage.style.display = 'none';
+        errorMessage.style.display = 'none';
+        
+        if (nome.value===''||mensagem.value==='') {
+          errorMessage.style.display = 'block';
+
+        }
+        else{
+          nome.value = '';
+          telefone.value = '';
+          email.value = '';
+          mensagem.value = '';
+          confirmationMessage.style.display = 'block';
+
+        }
+    }
     
